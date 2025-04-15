@@ -1,0 +1,270 @@
+* {
+    margin: 10;
+    padding:10;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    background-color: #ced7d7;
+  }
+  .home{
+    color: rgb(193, 204, 180);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.19rem;
+    text-align: center;
+    border: 2px solid #161414;
+  }
+  
+  
+  header {
+    background-color: #8dc3c6;
+    color: #180909;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(195, 209, 209);
+    padding: 20px;
+    margin: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+    flex-direction: column; 
+  }
+  .hh{
+    color: rgb(9, 5, 24);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  #tiffin-menu, #cart {
+    width: 45%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tiffin-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border: 1px solid #292222;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .tiffin-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tiffin-item h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    background-color: #e76f51;
+    color: #211b1b;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+  }
+ 
+  button:hover {
+    background-color: #f4a261;
+  }
+  
+#cart {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+
+  #cart .pay {
+    color: #2a9d8f;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+ 
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    max-height: 180px; 
+    overflow-y: auto;
+  }
+  
+  #cart-items li {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+  }
+  
+  #cart-items li:last-child {
+    border-bottom: none;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e76f51;
+    margin-top: 1rem;
+  }
+  
+  #checkout-button {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #checkout-button:hover {
+    background-color: #21867a;
+  }
+  footer {
+    background-color: #333;
+    color: #6c2222;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(165, 133, 133, 0.505); 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #605ca1;
+  }
+  
+#contact {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color:
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #contact h2, #contact h3 {
+    color: Black;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info li {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info a {
+    color: #e76f51;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  .hhh{
+   
+    padding: 20px solid rgb(35, 33, 33);
+  }
+  #contact-form {
+    background-color: #8d9ea6;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #b32a2a;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    background-color: #775f3a;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #contact-form button:hover {
+    background-color: #21867a;
+  }
+  
